@@ -35,8 +35,9 @@
         .card {
             flex: 0 0 auto;
             /* ป้องกันการ์ดหดตัว */
-            width: 350px;
-            
+            width: 280px;
+            padding-left: 10px;
+            padding-right: 10px;
             /* กำหนดความกว้างของการ์ดแต่ละใบ */
             border-radius: 15px;
             background-color: #ffffff;
@@ -46,7 +47,7 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
-            
+            justify-content: space-between;
         }
 
         .card img {
@@ -55,18 +56,9 @@
             border-radius: 10px;
         }
 
-        .card h3 {
-            font-size: 10px;
-            margin-bottom: 10px;
-        }
-
         .card li {
-            font-size: 15px;
+            font-size: 12px;
             color: #555;
-        }
-
-        .card li:hover {
-            color: rgb(127, 1, 1);
         }
 
         .ul2{
@@ -234,9 +226,10 @@
         }
     </style>
     <div class="card-carousel-container">
-        <h3 class="text-center">เปิดสอน 5 คณะ และวิทยาลัยนานาชาติ</h3>
+        <h5 class="text-center" style="font-weight: bolder; color: #302B82;">เปิดสอน 5 คณะ และวิทยาลัยนานาชาติ</h3>
         <button class="arrow left-arrow">&lt;</button>
         <div class="card-wrapper">
+            <!-- วิศวะ -->
             <div class="card" style="text-align: left;">
                 <p></p>
                 <button class="button b1">คณะวิศวกรรมศาสตร์</button>
@@ -254,9 +247,10 @@
                     <li>สำหรับผู้จบ ม.6 / ปวช. / กศน. / ปวส.</li>
                     <li>สมัครได้ไม่จำกัดแผนการเรียน</li>
                 </ul>
-                <img src="img/eng-tab.png" alt="Description 1">
+                <img src="img/eng-tab.png" alt="eng">
             </div>
 
+            <!-- ไอที -->
             <div class="card" style="text-align: left;">
                 <p></p>
                 <button class="button b2">คณะเทคโนโลยีสารสนเทศ</button>
@@ -273,9 +267,10 @@
                     <li>สำหรับผู้จบ ม.6 / ปวช. / กศน. / ปวส.</li>
                     <li>สมัครได้ไม่จำกัดแผนการเรียน</li>
                 </ul>
-                <img src="img/it-tab.png" alt="Description 1">
+                <img src="img/it-tab.png" alt="it">
             </div>
             
+            <!-- บริหาร -->
             <div class="card" style="text-align: left;">
                 <p></p>
                 <button class="button b3">คณะบริหารธุรกิจ</button>
@@ -296,14 +291,15 @@
                 <img src="img/ba-tab.png" alt="Description 1">
             </div>
             
+            <!-- สื่อสาร -->
             <div class="card" style="text-align: left;">
                 <p></p>
-                <button class="button b3">คณะสื่อสารสากล</button>
+                <button class="button b4">คณะสื่อสารสากล</button>
                 <ul>
                     <li>ภาษาญี่ปุ่นเพื่อธุรกิจระหว่างประเทศ (JIB)</li>
                     <li>สื่อสารสากล (GLC)</li>
                 </ul>
-                <button class="button b3">คุณสมบัติผู้สมัคร</button>
+                <button class="button b4">คุณสมบัติผู้สมัคร</button>
                 <ul class="ul2">
                     <li>สำหรับผู้จบ ม.6 / ปวช. / กศน. / ปวส.</li>
                     <li>สมัครได้ไม่จำกัดแผนการเรียน</li>
@@ -311,14 +307,15 @@
                 <img src="img/gc-tab.png" alt="Description 1">
             </div>
             
+            <!-- เทคโนอุตสา -->
             <div class="card" style="text-align: left;">
                 <p></p>
-                <button class="button b3">คณะเทคโนโลยีดิจิทัลเพื่อธุรกิจอุตสาหกรรม</button>
+                <button class="button b5">คณะเทคโนโลยีดิจิทัลเพื่อธุรกิจอุตสาหกรรม</button>
                 <ul>
                     <li>โลจิสติกส์และดิจิทัลซัพพลายเชน (LD)</li>
                     <li>เทคโนโลยีดิจิทัลเพื่อธุรกิจอุตสาหกรรม (DT)</li>
                 </ul>
-                <button class="button b3">คุณสมบัติผู้สมัคร</button>
+                <button class="button b5">คุณสมบัติผู้สมัคร</button>
                 <ul class="ul2">
                     <li>สำหรับผู้จบ ม.6 / ปวช. / กศน. / ปวส.</li>
                     <li>สมัครได้ไม่จำกัดแผนการเรียน</li>
