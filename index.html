@@ -92,8 +92,6 @@
             line-height: 1;
         }
 
-
-
         .left-arrow {
             left: 10px;
         }
@@ -255,6 +253,32 @@
             color: #ffffff;
             margin-bottom: -50px;
         }
+
+        .card-b1 ul:first-of-type li:hover {
+            background-color: rgba(167, 0, 0, 0.15); /* วิศวะ - แดงอ่อน */
+            color: #A70000;
+        }
+
+        .card-b2 ul:first-of-type li:hover {
+            background-color: rgba(48, 43, 130, 0.15); /* ไอที - น้ำเงินเข้ม */
+            color: #302B82;
+        }
+
+        .card-b3 ul:first-of-type li:hover {
+            background-color: rgba(110, 200, 255, 0.15); /* บริหาร - ฟ้า */
+            color: #6EC8FF;
+        }
+
+        .card-b4 ul:first-of-type li:hover {
+            background-color: rgba(255, 114, 204, 0.15); /* สื่อสาร - ชมพู */
+            color: #FF72CC;
+        }
+
+        .card-b5 ul:first-of-type li:hover {
+            background-color: rgba(18, 103, 74, 0.15); /* เทคโนฯ อุต - เขียว */
+            color: #12674A;
+        }
+
     </style>
     <style>
                     .card-content-default,
@@ -331,13 +355,21 @@
                         pointer-events: all;
                     }
 
+                    .card li a {
+                        display: block;         /* ✅ ขยายให้เต็มพื้นที่ของ li */
+                        width: 100%;
+                        height: 100%;
+                        text-decoration: none;  /* ✅ ลบเส้นใต้ */
+                        color: inherit;         /* ✅ ให้สีตาม li */
+                    }
+
                 </style>
     <div class="card-carousel-container">
         <h5 style="font-weight: bolder; color: #302B82;" class="text-center">เปิดสอน 5 คณะ และวิทยาลัยนานาชาติ</h3>
             <button class="arrow left-arrow">&lt;</button>
             <div class="card-wrapper">
                 <!-- วิศวะ -->
-                <div class="card">
+                <div class="card card-b1">
                      <div class="card-overlay overlay-b1"></div>
                     <button class="click">
                         click
@@ -345,8 +377,8 @@
                     <div class="card-content-default" style="display: block; margin-top: -7%;">
                         <button class="button b1">คณะวิศวกรรมศาสตร์</button>
                         <ul style="text-align: left;">
-                            <li>วิศวกรรมยานยนต์ (AE)</li>
-                            <li>วิศวกรรมหุ่นยนต์และระบบอัตโนมัติแบบลีน (RE)</li>
+                            <li><a href="https://www.tni.ac.th/engineering/major_ae?_gl=1*9l3xw5*_gcl_aw*R0NMLjE3NTMyMzUwNTcuQ2p3S0NBanc3ZnpEQmhBN0Vpd0FPcUpraDFpVUZhZm5nMThMbmgxdnViN19jQmlESTk3QWpPMjl0Qnk1b1IybU1SYUYtTXdYaW1mcHJSb0NLQlFRQXZEX0J3RQ..*_gcl_au*Mjg5MjYxMTc4LjE3NTMyMzUwNTM.">วิศวกรรมยานยนต์ (AE)</a></li>
+                            <li><a href="https://www.tni.ac.th/engineering/major_re?_gl=1*eqhu1n*_gcl_aw*R0NMLjE3NTMyMzUwNTcuQ2p3S0NBanc3ZnpEQmhBN0Vpd0FPcUpraDFpVUZhZm5nMThMbmgxdnViN19jQmlESTk3QWpPMjl0Qnk1b1IybU1SYUYtTXdYaW1mcHJSb0NLQlFRQXZEX0J3RQ..*_gcl_au*Mjg5MjYxMTc4LjE3NTMyMzUwNTM.">วิศวกรรมหุ่นยนต์และระบบอัตโนมัติแบบลีน (RE)</a></li>
                             <li>วิศวกรรมคอมพิวเตอร์และปัญญาประดิษฐ์ (CE)</li>
                             <li>วิศวกรรมอุตสาหการ (IE)</li>
                             <li>วิศวกรรมไฟฟ้า (EE)</li>
@@ -374,7 +406,7 @@
                 </div>
 
                 <!-- it -->
-                <div class="card">
+                <div class="card card-b2">
                      <div class="card-overlay overlay-b2"></div>
                     <button class="click">
                         click
@@ -410,7 +442,7 @@
                 </div>
 
                 <!-- บริหาร -->
-                <div class="card">
+                <div class="card card-b3">
                      <div class="card-overlay overlay-b3"></div>
                     <button class="click">
                         click
@@ -449,7 +481,7 @@
                 </div>
 
                 <!-- สื่อสาร -->
-                 <div class="card">
+                 <div class="card card-b4">
                      <div class="card-overlay overlay-b4"></div>
                     <button class="click">
                         click
@@ -482,7 +514,7 @@
                 </div>
 
                 <!-- เทคโนอุตสา -->
-                 <div class="card">
+                 <div class="card card-b5">
                      <div class="card-overlay overlay-b5"></div>
                     <button class="click">
                         click
