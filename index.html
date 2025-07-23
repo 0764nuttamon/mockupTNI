@@ -35,7 +35,8 @@
         .card {
             flex: 0 0 auto;
             /* ป้องกันการ์ดหดตัว */
-            width: 300px;
+            width: 350px;
+            
             /* กำหนดความกว้างของการ์ดแต่ละใบ */
             border-radius: 15px;
             background-color: #ffffff;
@@ -51,7 +52,7 @@
             max-width: 60%;
             height: auto;
             border-radius: 10px;
-            margin-bottom: 15px;
+            margin-bottom: -50px;
         }
 
         .card h3 {
@@ -65,7 +66,7 @@
         }
 
         .card li {
-            font-size: 12px;
+            font-size: 15px;
             color: #555;
         }
 
@@ -74,19 +75,28 @@
         }
 
         .arrow {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 50%;
-            cursor: pointer;
-            font-size: 1.5em;
-            z-index: 10;
-            /* ให้ลูกศรอยู่ด้านบนของการ์ด */
-        }
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2em;
+  z-index: 10;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  line-height: 1;
+}
+
+
 
         .left-arrow {
             left: 10px;
@@ -101,8 +111,6 @@
         }
 
         .button {
-            background-color: #b0002f;
-            /* Green */
             border: none;
             color: white;
             padding: 11px;
@@ -114,6 +122,9 @@
             cursor: pointer;
             border-radius: 20px;
         }
+
+        .b1{background-color: #b0002f;}
+        .b2{background-color: #b0002f;}
     </style>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Poppins:900i');
@@ -225,8 +236,8 @@
         <button class="arrow left-arrow">&lt;</button>
         <div class="card-wrapper">
             <div class="card" style="text-align: left;">
-                <img src="img/eng-tab.png" alt="Description 1">
-                <button class="button">คณะวิศวกรรมศาสตร์</button>
+                
+                <button class="button b1">คณะวิศวกรรมศาสตร์</button>
                 <ul>
                     <li>วิศวกรรมยานยนต์ (AE)</li>
                     <li>วิศวกรรมหุ่นยนต์และระบบอัตโนมัติแบบลีน (RE)</li>
@@ -236,11 +247,27 @@
                     <li>วิศวกรรมเซมิคอนดักเตอร์ (SC)</li>
                     <li>วิศวกรรมดิจิทัล (DGE) หลักสูตรนานาชาติ</li>
                 </ul>
-                <button class="button">คุณสมบัติผู้สมัคร</button>
-                <ul>
+                <button class="button b1">คุณสมบัติผู้สมัคร</button>
+                <ul style="margin-bottom: -20px;">
                     <li>สำหรับผู้จบ ม.6 / ปวช. / กศน. / ปวส.</li>
                     <li>สมัครได้ไม่จำกัดแผนการเรียน</li>
                 </ul>
+                <img src="img/eng-tab.png" alt="Description 1">
+            </div>
+            <div class="card" style="text-align: left;">
+                
+                <button class="button">คณะเทคโนโลยีสารสนเทศ</button>
+                <ul>
+                    <li>วิศวกรรมยานยนต์ (AE)</li>
+                    <li>วิศวกรรมเซมิคอนดักเตอร์ (SC)</li>
+                    <li>วิศวกรรมดิจิทัล (DGE) หลักสูตรนานาชาติ</li>
+                </ul>
+                <button class="button">คุณสมบัติผู้สมัคร</button>
+                <ul style="margin-bottom: -20px;">
+                    <li>สำหรับผู้จบ ม.6 / ปวช. / กศน. / ปวส.</li>
+                    <li>สมัครได้ไม่จำกัดแผนการเรียน</li>
+                </ul>
+                <img style="margin-top: 65px;" src="img/it-tab.png" alt="Description 1">
             </div>
             <div class="card" style="text-align: left;">
                 <img src="img/eng-tab.png" alt="Description 1">
@@ -261,7 +288,7 @@
                 </ul>
             </div>
             <div class="card" style="text-align: left;">
-                <img src="img/eng-tab.png" alt="Description 1">
+                <img src="img/it-tab.png" alt="Description 1">
                 <button class="button">คณะวิศวกรรมศาสตร์</button>
                 <ul>
                     <li>วิศวกรรมยานยนต์ (AE)</li>
