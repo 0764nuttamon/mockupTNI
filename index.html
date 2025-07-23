@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mockup page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        .card-carousel-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            /* ซ่อนส่วนที่เกินออกไป */
+            padding: 20px 0;
+            /* เพิ่ม padding ด้านบนและล่าง */
+        }
+
+        .card-carousel-container {
+            padding-left: 30px;
+        }
+
+        .card-wrapper {
+    display: flex;
+    gap: 20px;
+    scroll-behavior: smooth;
+    overflow-x: auto; /* Add this line */
+    -webkit-overflow-scrolling: touch; /* Optional: for smoother scrolling on iOS devices */
+}
+        .card {
+            flex: 0 0 auto;
+            /* ป้องกันการ์ดหดตัว */
+            width: 300px;
+            /* กำหนดความกว้างของการ์ดแต่ละใบ */
+            border-radius: 15px;
+            background-color: #ffffff;
+            padding: 7px;
+            box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .card img {
+            max-width: 60%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 10px;
+            color: #555;
+        }
+
+        .card li {
+            font-size: 12px;
+            color: #555;
+        }
+
+        .card li:hover {
+            color: red;
+        }
+
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.5em;
+            z-index: 10;
+            /* ให้ลูกศรอยู่ด้านบนของการ์ด */
+        }
+
+        .left-arrow {
+            left: 10px;
+        }
+
+        .right-arrow {
+            right: 10px;
+        }
+
+        .arrow:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .button {
+            background-color: #b0002f;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 11px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        .cta {
+            display: flex;
+            padding: 10px 45px;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-size: 40px;
+            color: white;
+            background: #6225E6;
+            transition: 1s;
+            box-shadow: 6px 6px 0 black;
+            transform: skewX(-15deg);
+        }
+
+        .cta:focus {
+            outline: none;
+        }
+
+        .cta:hover {
+            transition: 0.5s;
+            box-shadow: 10px 10px 0 #FBC638;
+        }
+
+        .cta span:nth-child(2) {
+            transition: 0.5s;
+            margin-right: 0px;
+        }
+
+        .cta:hover span:nth-child(2) {
+            transition: 0.5s;
+            margin-right: 45px;
+        }
+
+        span {
+            transform: skewX(15deg)
+        }
+
+        span:nth-child(2) {
+            width: 20px;
+            margin-left: 30px;
+            position: relative;
+            top: 12%;
+        }
+
+        /**************SVG****************/
+
+        path.one {
+            transition: 0.4s;
+            transform: translateX(-60%);
+        }
+
+        path.two {
+            transition: 0.5s;
+            transform: translateX(-30%);
+        }
+
+        .cta:hover path.three {
+            animation: color_anim 1s infinite 0.2s;
+        }
+
+        .cta:hover path.one {
+            transform: translateX(0%);
+            animation: color_anim 1s infinite 0.6s;
+        }
+
+        .cta:hover path.two {
+            transform: translateX(0%);
+            animation: color_anim 1s infinite 0.4s;
+        }
+
+        /* SVG animations */
+
+        @keyframes color_anim {
+            0% {
+                fill: white;
+            }
+
+            50% {
+                fill: #FBC638;
+            }
+
+            100% {
+                fill: white;
+            }
+        }
+    </style>
+    <div class="card-carousel-container">
+        <h2 class="text-center">เปิดสอน 5 คณะ และวิทยาลัยนานาชาติ</h2>
+        <button class="arrow left-arrow">&lt;</button>
+        <div class="card-wrapper">
+            <div class="card" style="text-align: left;">
+                <img src="img/eng-tab.png" alt="Description 1">
+                <button class="button">คณะวิศวกรรมศาสตร์</button>
+                <ul>
+                    <li>วิศวกรรมยานยนต์ (AE)</li>
+                    <li>วิศวกรรมหุ่นยนต์และระบบอัตโนมัติแบบลีน (RE)</li>
+                    <li>วิศวกรรมคอมพิวเตอร์และปัญญาประดิษฐ์ (CE)</li>
+                    <li>วิศวกรรมอุตสาหการ (IE)</li>
+                    <li>วิศวกรรมไฟฟ้า (EE)</li>
+                    <li>วิศวกรรมเซมิคอนดักเตอร์ (SC)</li>
+                    <li>วิศวกรรมดิจิทัล (DGE) หลักสูตรนานาชาติ</li>
+                </ul>
+                <button class="button">คุณสมบัติผู้สมัคร</button>
+                <ul>
+                    <li>สำหรับผู้จบ ม.6 / ปวช. / กศน. / ปวส.</li>
+                    <li>สมัครได้ไม่จำกัดแผนการเรียน</li>
+                </ul>
+            </div>
+            <div class="card">
+                <img src="path/to/image2.jpg" alt="Description 2">
+                <h3>หัวข้อการ์ด 2</h3>
+                <p>รายละเอียดการ์ด 2</p>
+            </div>
+            <div class="card">
+                <img src="path/to/image3.jpg" alt="Description 3">
+                <h3>หัวข้อการ์ด 3</h3>
+                <p>รายละเอียดการ์ด 3</p>
+            </div>
+            <div class="card">
+                <img src="path/to/image3.jpg" alt="Description 3">
+                <h3>หัวข้อการ์ด 3</h3>
+                <p>รายละเอียดการ์ด 3</p>
+            </div>
+            <div class="card">
+                <img src="path/to/image3.jpg" alt="Description 3">
+                <h3>หัวข้อการ์ด 3</h3>
+                <p>รายละเอียดการ์ด 3</p>
+            </div>
+            <div class="card">
+                <img src="path/to/image3.jpg" alt="Description 3">
+                <h3>หัวข้อการ์ด 3</h3>
+                <p>รายละเอียดการ์ด 3</p>
+            </div>
+            <div class="card">
+                <img src="path/to/image3.jpg" alt="Description 3">
+                <h3>หัวข้อการ์ด 3</h3>
+                <p>รายละเอียดการ์ด 3</p>
+            </div>
+        </div>
+        <button class="arrow right-arrow">&gt;</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cardWrapper = document.querySelector('.card-wrapper');
+            const leftArrow = document.querySelector('.left-arrow');
+            const rightArrow = document.querySelector('.right-arrow');
+            const cardWidth = 300; // ความกว้างของการ์ดแต่ละใบ (ต้องตรงกับ CSS)
+            const cardGap = 20;    // ระยะห่างระหว่างการ์ด (ต้องตรงกับ CSS)
+            const scrollAmount = cardWidth + cardGap; // ระยะที่เลื่อนในแต่ละครั้ง
+
+            leftArrow.addEventListener('click', () => {
+                cardWrapper.scrollBy({
+                    left: -scrollAmount,
+                    behavior: 'smooth'
+                });
+            });
+
+            rightArrow.addEventListener('click', () => {
+                cardWrapper.scrollBy({
+                    left: scrollAmount,
+                    behavior: 'smooth'
+                });
+            });
+
+            // Optional: ซ่อน/แสดงลูกศรเมื่อถึงจุดสิ้นสุด
+            cardWrapper.addEventListener('scroll', () => {
+                // ซ่อนลูกศรซ้ายเมื่ออยู่ซ้ายสุด
+                if (cardWrapper.scrollLeft === 0) {
+                    leftArrow.style.display = 'none';
+                } else {
+                    leftArrow.style.display = 'block';
+                }
+
+                // ซ่อนลูกศรขวาเมื่ออยู่ขวาสุด
+                // ตรวจสอบว่า scrollLeft + clientWidth มีค่าใกล้เคียงกับ scrollWidth
+                if (cardWrapper.scrollLeft + cardWrapper.clientWidth >= cardWrapper.scrollWidth - 1) { // -1 เพื่อแก้ไขปัญหา floating point
+                    rightArrow.style.display = 'none';
+                } else {
+                    rightArrow.style.display = 'block';
+                }
+            });
+
+            // เริ่มต้นแสดง/ซ่อนลูกศรเมื่อโหลดหน้า
+            cardWrapper.dispatchEvent(new Event('scroll'));
+        });
+    </script>
+</body>
+
+</html>
