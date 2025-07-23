@@ -26,13 +26,17 @@
         }
 
         .card-wrapper {
-    display: flex;
-    gap: 20px;
-    scroll-behavior: smooth;
-    overflow-x: auto; /* Add this line */
-    -webkit-overflow-scrolling: touch; /* Optional: for smoother scrolling on iOS devices */
-}
+            display: flex;
+            gap: 20px;
+            scroll-behavior: smooth;
+            overflow-x: auto;
+            /* Add this line */
+            -webkit-overflow-scrolling: touch;
+            /* Optional: for smoother scrolling on iOS devices */
+        }
+
         .card {
+
             flex: 0 0 auto;
             /* ป้องกันการ์ดหดตัว */
             width: 280px;
@@ -61,31 +65,31 @@
             color: #555;
         }
 
-        .ul2{
+        .ul2 {
             margin-bottom: -20px;
         }
 
         .arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 1.2em;
-  z-index: 10;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.2em;
+            z-index: 10;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-  padding: 0;
-  line-height: 1;
-}
+            padding: 0;
+            line-height: 1;
+        }
 
 
 
@@ -114,11 +118,25 @@
             border-radius: 20px;
         }
 
-        .b1{background-color: #A70000;}
-        .b2{background-color: #302B82;}
-        .b3{background-color: #6EC8FF;}
-        .b4{background-color: #FF72CC;}
-        .b5{background-color: #12674A;}
+        .b1 {
+            background-color: #A70000;
+        }
+
+        .b2 {
+            background-color: #302B82;
+        }
+
+        .b3 {
+            background-color: #6EC8FF;
+        }
+
+        .b4 {
+            background-color: #FF72CC;
+        }
+
+        .b5 {
+            background-color: #12674A;
+        }
     </style>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Poppins:900i');
@@ -224,108 +242,130 @@
                 fill: white;
             }
         }
+
+        .click {
+            margin-left: 236px;
+            background-color: #8f8d88;
+            font-size: 16px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            border: none;
+            border-top-right-radius: 15px;
+            color: #ffffff;
+        }
     </style>
     <div class="card-carousel-container">
-        <h5 class="text-center" style="font-weight: bolder; color: #302B82;">เปิดสอน 5 คณะ และวิทยาลัยนานาชาติ</h3>
-        <button class="arrow left-arrow">&lt;</button>
-        <div class="card-wrapper">
-            <!-- วิศวะ -->
-            <div class="card" style="text-align: left;">
-                <p></p>
-                <button class="button b1">คณะวิศวกรรมศาสตร์</button>
-                <ul>
-                    <li>วิศวกรรมยานยนต์ (AE)</li>
-                    <li>วิศวกรรมหุ่นยนต์และระบบอัตโนมัติแบบลีน (RE)</li>
-                    <li>วิศวกรรมคอมพิวเตอร์และปัญญาประดิษฐ์ (CE)</li>
-                    <li>วิศวกรรมอุตสาหการ (IE)</li>
-                    <li>วิศวกรรมไฟฟ้า (EE)</li>
-                    <li>วิศวกรรมเซมิคอนดักเตอร์ (SC)</li>
-                    <li>วิศวกรรมดิจิทัล (DGE) หลักสูตรนานาชาติ</li>
-                </ul>
-                <button class="button b1">คุณสมบัติผู้สมัคร</button>
-                <ul class="ul2">
-                    <li>สำหรับผู้จบ ม.6 / ปวช. / กศน. / ปวส.</li>
-                    <li>สมัครได้ไม่จำกัดแผนการเรียน</li>
-                </ul>
-                <img src="img/eng-tab.png" alt="eng">
-            </div>
+        <h5 style="font-weight: bolder; color: #302B82;">เปิดสอน 5 คณะ และวิทยาลัยนานาชาติ</h3>
+            <button class="arrow left-arrow">&lt;</button>
+            <div class="card-wrapper">
+                <!-- วิศวะ -->
+                <div class="card" style="text-align: left;">
+                    <button class="click">
+                        click
+                    </button>
 
-            <!-- ไอที -->
-            <div class="card" style="text-align: left;">
-                <p></p>
-                <button class="button b2">คณะเทคโนโลยีสารสนเทศ</button>
-                <ul>
-                    <li>เทคโนโลยีสารสนเทศ (IT)</li>
-                    <li>เทคโนโลยีมัลติมีเดีย (MT)</li>
-                    <li>เทคโนโลยีสารสนเทศทางธุรกิจดิจิทัล (BI)</li>
-                    <li>เทคโนโลยีดิจิทัลทางสื่อสารมวลชน (DC)</li>
-                    <li>วิทยาการข้อมูลและการวิเคราะห์ข้อมูล (DS)</li>
-                    <li>วิทยาการข้อมูลและปัญญาประดิษฐ์ (DSA)หลักสูตรนานาชาติ</li>
-                </ul>
-                <button class="button b2">คุณสมบัติผู้สมัคร</button>
-                <ul class="ul2">
-                    <li>สำหรับผู้จบ ม.6 / ปวช. / กศน. / ปวส.</li>
-                    <li>สมัครได้ไม่จำกัดแผนการเรียน</li>
-                </ul>
-                <img src="img/it-tab.png" alt="it">
+                    <button class="button b1">คณะวิศวกรรมศาสตร์</button>
+                    <ul>
+                        <li>วิศวกรรมยานยนต์ (AE)</li>
+                        <li>วิศวกรรมหุ่นยนต์และระบบอัตโนมัติแบบลีน (RE)</li>
+                        <li>วิศวกรรมคอมพิวเตอร์และปัญญาประดิษฐ์ (CE)</li>
+                        <li>วิศวกรรมอุตสาหการ (IE)</li>
+                        <li>วิศวกรรมไฟฟ้า (EE)</li>
+                        <li>วิศวกรรมเซมิคอนดักเตอร์ (SC)</li>
+                        <li>วิศวกรรมดิจิทัล (DGE) หลักสูตรนานาชาติ</li>
+                    </ul>
+                    <button class="button b1">คุณสมบัติผู้สมัคร</button>
+                    <ul class="ul2">
+                        <li>สำหรับผู้จบ ม.6 / ปวช. / กศน. / ปวส.</li>
+                        <li>สมัครได้ไม่จำกัดแผนการเรียน</li>
+                    </ul>
+                    <img src="img/eng-tab.png" alt="eng">
+                </div>
+
+                <!-- ไอที -->
+                <div class="card" style="text-align: left;">
+                    <button class="click">
+                        click
+                    </button>
+                    <button class="button b2">คณะเทคโนโลยีสารสนเทศ</button>
+                    <ul>
+                        <li>เทคโนโลยีสารสนเทศ (IT)</li>
+                        <li>เทคโนโลยีมัลติมีเดีย (MT)</li>
+                        <li>เทคโนโลยีสารสนเทศทางธุรกิจดิจิทัล (BI)</li>
+                        <li>เทคโนโลยีดิจิทัลทางสื่อสารมวลชน (DC)</li>
+                        <li>วิทยาการข้อมูลและการวิเคราะห์ข้อมูล (DS)</li>
+                        <li>วิทยาการข้อมูลและปัญญาประดิษฐ์ (DSA)หลักสูตรนานาชาติ</li>
+                    </ul>
+                    <button class="button b2">คุณสมบัติผู้สมัคร</button>
+                    <ul class="ul2">
+                        <li>สำหรับผู้จบ ม.6 / ปวช. / กศน. / ปวส.</li>
+                        <li>สมัครได้ไม่จำกัดแผนการเรียน</li>
+                    </ul>
+                    <img src="img/it-tab.png" alt="it">
+                </div>
+
+                <!-- บริหาร -->
+                <div class="card" style="text-align: left;">
+                    <button class="click">
+                        click
+                    </button>
+                    <button class="button b3">คณะบริหารธุรกิจ</button>
+                    <ul>
+                        <li>การพัฒนาธุรกิจเพื่อความยั่งยืน (BD)</li>
+                        <li>บริหารธุรกิจญี่ปุ่น (BJ)</li>
+                        <li>การจัดการธุรกิจระหว่างประเทศ (IB)</li>
+                        <li>การบัญชี (AC)</li>
+                        <li>บริหารทรัพยากรมนุษย์แบบญี่ปุ่น(HR)</li>
+                        <li>การตลาดดิจิทัล (DM)</li>
+                        <li>การสร้างสรรค์ธุรกิจบริการท่องเที่ยว โรงแรมและการบิน (SB)</li>
+                        <li>ธุรกิจระหว่างประเทศและการเป็นผู้ประกอบการ (IBN) หลักสูตรนานาชาติ</li>
+                    </ul>
+                    <button class="button b3">คุณสมบัติผู้สมัคร</button>
+                    <ul class="ul2">
+                        <li>สำหรับผู้จบ ม.6 / ปวช. / กศน. / ปวส.</li>
+                        <li>สมัครได้ไม่จำกัดแผนการเรียน</li>
+                    </ul>
+                    <img src="img/ba-tab.png" alt="ba">
+                </div>
+
+                <!-- สื่อสาร -->
+                <div class="card" style="text-align: left;">
+                    <button class="click">
+                        click
+                    </button>
+                    <button class="button b4">คณะสื่อสารสากล</button>
+                    <ul>
+                        <li>ภาษาญี่ปุ่นเพื่อธุรกิจระหว่างประเทศ (JIB)</li>
+                        <li>สื่อสารสากล (GLC)</li>
+                    </ul>
+                    <button class="button b4">คุณสมบัติผู้สมัคร</button>
+                    <ul class="ul2">
+                        <li>สำหรับผู้จบ ม.6 / ปวช. / กศน. / ปวส.</li>
+                        <li>สมัครได้ไม่จำกัดแผนการเรียน</li>
+                    </ul>
+                    <img src="img/gc-tab.png" alt="gc">
+                </div>
+
+                <!-- เทคโนอุตสา -->
+                <div class="card" style="text-align: left;">
+                    <button class="click">
+                        click
+                    </button>
+                    <button class="button b5">คณะเทคโนโลยีดิจิทัลเพื่อธุรกิจอุตสาหกรรม</button>
+                    <ul>
+                        <li>โลจิสติกส์และดิจิทัลซัพพลายเชน (LD)</li>
+                        <li>เทคโนโลยีดิจิทัลเพื่อธุรกิจอุตสาหกรรม (DT)</li>
+                    </ul>
+                    <button class="button b5">คุณสมบัติผู้สมัคร</button>
+                    <ul class="ul2">
+                        <li>สำหรับผู้จบ ม.6 / ปวช. / กศน. / ปวส.</li>
+                        <li>สมัครได้ไม่จำกัดแผนการเรียน</li>
+                    </ul>
+                    <img src="img/dt-tab.png" alt="dt">
+                </div>
+
             </div>
-            
-            <!-- บริหาร -->
-            <div class="card" style="text-align: left;">
-                <p></p>
-                <button class="button b3">คณะบริหารธุรกิจ</button>
-                <ul>
-                    <li>การพัฒนาธุรกิจเพื่อความยั่งยืน (BD)</li>
-                    <li>บริหารธุรกิจญี่ปุ่น (BJ)</li><li>การจัดการธุรกิจระหว่างประเทศ (IB)</li>
-                    <li>การบัญชี (AC)</li>
-                    <li>บริหารทรัพยากรมนุษย์แบบญี่ปุ่น(HR)</li>
-                    <li>การตลาดดิจิทัล (DM)</li>
-                    <li>การสร้างสรรค์ธุรกิจบริการท่องเที่ยว โรงแรมและการบิน (SB)</li>
-                    <li>ธุรกิจระหว่างประเทศและการเป็นผู้ประกอบการ (IBN) หลักสูตรนานาชาติ</li>
-                </ul>
-                <button class="button b3">คุณสมบัติผู้สมัคร</button>
-                <ul class="ul2">
-                    <li>สำหรับผู้จบ ม.6 / ปวช. / กศน. / ปวส.</li>
-                    <li>สมัครได้ไม่จำกัดแผนการเรียน</li>
-                </ul>
-                <img src="img/ba-tab.png" alt="Description 1">
-            </div>
-            
-            <!-- สื่อสาร -->
-            <div class="card" style="text-align: left;">
-                <p></p>
-                <button class="button b4">คณะสื่อสารสากล</button>
-                <ul>
-                    <li>ภาษาญี่ปุ่นเพื่อธุรกิจระหว่างประเทศ (JIB)</li>
-                    <li>สื่อสารสากล (GLC)</li>
-                </ul>
-                <button class="button b4">คุณสมบัติผู้สมัคร</button>
-                <ul class="ul2">
-                    <li>สำหรับผู้จบ ม.6 / ปวช. / กศน. / ปวส.</li>
-                    <li>สมัครได้ไม่จำกัดแผนการเรียน</li>
-                </ul>
-                <img src="img/gc-tab.png" alt="Description 1">
-            </div>
-            
-            <!-- เทคโนอุตสา -->
-            <div class="card" style="text-align: left;">
-                <p></p>
-                <button class="button b5">คณะเทคโนโลยีดิจิทัลเพื่อธุรกิจอุตสาหกรรม</button>
-                <ul>
-                    <li>โลจิสติกส์และดิจิทัลซัพพลายเชน (LD)</li>
-                    <li>เทคโนโลยีดิจิทัลเพื่อธุรกิจอุตสาหกรรม (DT)</li>
-                </ul>
-                <button class="button b5">คุณสมบัติผู้สมัคร</button>
-                <ul class="ul2">
-                    <li>สำหรับผู้จบ ม.6 / ปวช. / กศน. / ปวส.</li>
-                    <li>สมัครได้ไม่จำกัดแผนการเรียน</li>
-                </ul>
-                <img src="img/dt-tab.png" alt="Description 1">
-            </div>
-            
-            
-        </div>
-        <button class="arrow right-arrow">&gt;</button>
+            <button class="arrow right-arrow">&gt;</button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
@@ -373,6 +413,7 @@
             cardWrapper.dispatchEvent(new Event('scroll'));
         });
     </script>
+
 </body>
 
 </html>
